@@ -24,14 +24,23 @@ $('.question3').html(p3);
 
 problemOne();
 problemTwo();
-// problemThree();
+problemThree();
+
+
+
 
 $("input[type='radio']").on('click', function(event) {
+	//increments counter per radio button click
+	var counterValue = parseInt($(".spanCounter").text(), 10) +1;
+	$(".spanCounter").text(counterValue)
+	
 	var counter = 0;
+	
+	//gets value of radio button
 	var rightOrWrongValue = $(this).val();	
 	for (var i = 0; i < 10; i++){
 	try {	
-			if (counter === 4) {
+			if (counter === 3) {
 				$('#3').hide();
 				$('#4').show();
 				break;
@@ -42,6 +51,7 @@ $("input[type='radio']").on('click', function(event) {
 				$('#3').show();
 				counter += 1;
 				console.log('second');
+				break;
 			}
 
 			else if (counter === 0) {
@@ -68,7 +78,7 @@ $("input[type='radio']").on('click', function(event) {
 		}
 
 	}
-	console.log(counter);
+
 
 });
 
