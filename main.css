@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  background-color: blue;
+  color: white;
+  font-size: 35px;
+}
+
+main {
+  padding: 30px;
+  min-width: 250px;
+}
+
+.hero {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.hero img {
+  height: 100%
+}
+
+
+.thumbnail {
+  display: inline-block;
+  cursor: pointer;
+  height: 60px;
+}
+
+a.thumbnail:hover {
+  box-shadow: 5px 5px 5px gray;
+}
+
+.thumbnail img {
+  max-height: 100%;
+}
+
+div {
+  min-width: 250px;
+  height: 200px;
+  background-color: blue;
+  border: 2px solid black;
+}
+
+div.question2 {
+  display: none;
+}
+
+div.question3 {
+  display: none;
+}
+
+
+
+
+#test-container {
+  min-width: 250px;
+  height: 200px;
+  background-color: grey;
+  border: 2px solid black;
+}
+
+#multChoice {
+  min-width: 90%;
+  height: 35px;
+}
